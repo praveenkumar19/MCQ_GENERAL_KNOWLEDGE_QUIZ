@@ -1,2 +1,2 @@
 # MCQ_GENERAL_KNOWLEDGE_QUIZ
-Python Quiz – A simple terminal-based quiz with 10 multiple-choice questions. Enter the option number to answer and see your score at the end.
+Python Quiz – An interactive terminal-based quiz program in Python. It contains 10 multiple-choice questions on general knowledge and programming. Users enter the option number (1–4) to answer each question, receive immediate feedback, and see their final score at the end. The quiz includes input validation to prevent invalid entries, making it beginner-friendly and easy to use. Ideal for practicing Python basics and testing general knowledge.
