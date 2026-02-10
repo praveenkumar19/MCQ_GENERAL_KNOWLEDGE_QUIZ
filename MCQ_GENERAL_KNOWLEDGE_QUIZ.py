@@ -1,32 +1,205 @@
-quiz = [ 
-    {"question": "1. What is the capital of India?", "options": ["1. Mumbai", "2. Delhi", "3. Kolkata", "4. Chennai"], "answer": "2"},
-    {"question": "2. Which language is used for web development?", "options": ["1. Python", "2. Java", "3. JavaScript", "4. All of these"], "answer": "4"},
-    {"question": "3. What is 5 + 7?", "options": ["1. 10", "2. 11", "3. 12", "4. 13"], "answer": "3"},
-    {"question": "4. Who is known as the Father of Computers?", "options": ["1. Charles Babbage", "2. Alan Turing", "3. Tim Berners-Lee", "4. Bill Gates"], "answer": "1"},
-    {"question": "5. Which company developed Python?", "options": ["1. Microsoft", "2. Sun Microsystems", "3. Google", "4. None of these"], "answer": "4"},
-    {"question": "6. Which of these is a Python data type?", "options": ["1. String", "2. Integer", "3. List", "4. All of these"], "answer": "4"},
-    {"question": "7. What does CPU stand for?", "options": ["1. Central Process Unit", "2. Central Processing Unit", "3. Control Processing Unit", "4. Central Peripheral Unit"], "answer": "2"},
-    {"question": "8. HTML stands for?", "options": ["1. Hyper Text Markup Language", "2. Hyperlinks and Text Markup Language", "3. Home Tool Markup Language", "4. Hyperlinking Text Marking Language"], "answer": "1"},
-    {"question": "9. Which of these is a loop in Python?", "options": ["1. for", "2. while", "3. do-while", "4. Both 1 and 2"], "answer": "4"},
-    {"question": "10. What is the output of print(2**3)?", "options": ["1. 6", "2. 8", "3. 9", "4. 5"], "answer": "2"}
-]
+score = 0 
+print("Welcome to the MCQ Quiz App") 
 
-score = 0
-for q in quiz:
-    print("\n" + q["question"])
-    for option in q["options"]:
-        print(option)
-    
-    user_ans = input("Enter the correct option number: ")
-    while user_ans not in ['1', '2', '3', '4']:
-        print("Invalid input! Enter 1, 2, 3, or 4.")
-        user_ans = input("Enter the correct option number: ")
-    
-    if user_ans == q["answer"]:
-        print("Correct!")
-        score += 1
-    else:
-        correct_option = q["options"][int(q["answer"]) - 1]
-        print(f"Wrong! Correct answer is: {correct_option}")
+# Q1
+print("\nQ1. Which device is used to input data into a computer?") 
+print("a) Monitor\nb) Printer\nc) Keyboard\nd) Speaker")
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c':
+    print("Correct answer")
+    score += 1 
+else:
+    print("Wrong answer")
 
-print(f"\nQuiz completed! Your final score is: {score}/{len(quiz)}")
+# Q2
+print("\nQ2. Which part of the computer is called the brain?")
+print("a) RAM\nb) Hard Disk\nc) CPU\nd) Monitor")
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c':
+    print("Correct answer")
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q3
+print("\nQ3. Which of the following is an output device?") 
+print("a) Mouse\nb) Scanner\nc) Keyboard\nd) Printer") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'd': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q4
+print("\nQ4. Which storage is temporary?") 
+print("a) Hard Disk\nb) Pen Drive\nc) RAM\nd) CD") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q5
+print("\nQ5. Which key is used to delete characters?") 
+print("a) Enter\nb) Shift\nc) Backspace\nd) Ctrl") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q6
+print("\nQ6. What does URL stand for?") 
+print("a) Uniform Resource Locator\nb) Universal Resource Link\nc) Uniform Resource Link\nd) Universal Record Locator") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'a': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q7
+print("\nQ7. Which symbol is used for multiplication in Python?") 
+print("a) x\nb) *\nc) %\nd) +") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'b': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q8
+print("\nQ8. What is the output of print(10 % 3)?") 
+print("a) 1\nb) 3\nc) 0\nd) 10") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'a': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q9
+print("\nQ9. Which keyword is used to create a loop?") 
+print("a) if\nb) def\nc) for\nd) print") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q10
+print("\nQ10. Which function displays output on screen?") 
+print("a) display()\nb) show()\nc) print()\nd) output()") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q11
+print("\nQ11. Which data type stores True or False?") 
+print("a) int\nb) string\nc) float\nd) boolean") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'd': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q12
+print("\nQ12. Which operator checks equality?") 
+print("a) =\nb) ==\nc) !=\nd) >") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'b': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q13
+print("\nQ13. What is the output of print(4 * 2)?") 
+print("a) 6\nb) 8\nc) 12\nd) 42") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'b': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q14
+print("\nQ14. Which of these is a valid variable name?") 
+print("a) 2num\nb) num-1\nc) num_1\nd) num 1") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q15
+print("\nQ15. Which keyword is used to exit a loop?") 
+print("a) stop\nb) break\nc) exit\nd) end") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'b': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q16
+print("\nQ16. Which data structure stores multiple values?") 
+print("a) int\nb) float\nc) list\nd) bool") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q17
+print("\nQ17. What is the output of print(9 // 2)?") 
+print("a) 4.5\nb) 5\nc) 4\nd) 2") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q18
+print("\nQ18. Which of these is an operating system?") 
+print("a) Python\nb) Windows\nc) Chrome\nd) MS Word") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'b': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q19
+print("\nQ19. Which key is used to start a new line?") 
+print("a) Shift\nb) Ctrl\nc) Enter\nd) Alt") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'c': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+# Q20
+print("\nQ20. Which software is used to write programs?") 
+print("a) Compiler\nb) Text Editor\nc) Browser\nd) Media Player") 
+answer = input("Enter your answer (a/b/c/d): ").lower() 
+if answer == 'b': 
+    print("Correct answer") 
+    score += 1 
+else: 
+    print("Wrong answer") 
+
+print("\n------------------------------")
+print("Your Final Score is:", score, "/20")
